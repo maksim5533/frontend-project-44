@@ -27,13 +27,11 @@ const game = () => {
   const operator = operators[getRandomOperator(operators)];
   const Quest = `${num1} ${operator} ${num2}.`;
   const correctanswer = calculate(num1, num2, operator).toString();
-  console.log(correctanswer);
   return [correctanswer, Quest];
 };
 
 const gamestartercalc = () => {
   gamestarter(game, rule);
 };
-
 
 export default gamestartercalc;
